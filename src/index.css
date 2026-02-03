@@ -2,9 +2,60 @@ body {
   font-family: Barlow Semi Condensed, IBM Plex Sans, Montserrat, sans-serif;
 }
 
-
-.sidebar {
+.banner {
   font-family: Barlow Semi Condensed, IBM Plex Sans, Montserrat, sans-serif;
-  background: linear-gradient(to bottom right, purple, blue);
+  background: linear-gradient(purple, blue);
   color: white;
+}
+
+/* Ensure full screen height */
+.discord-layout {
+  height: 100vh;
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar-container {
+  width: 240px;              /* Fixed sidebar width */
+  height: 100vh;
+  position: fixed;           /* Lock it to the left */
+  top: 0;
+  left: 0;
+
+  background-color: #2f3136; /* Discord sidebar color */
+  color: #8e9297;            /* Default text color */
+  border-right: 1px solid #202225;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content takes remaining space */
+.main-content-container {
+  margin-left: 240px;        /* Same as sidebar width */
+  height: 100vh;
+  width: calc(100vw - 240px);
+  background-color: #36393f;
+  overflow-y: auto;
+}
+
+/* Styling for individual channel items */
+.sidebar-item {
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-item:hover {
+  background-color: #4f545c;
+  color: #dcddde;
+}
+
+/* Active channel styling */
+.sidebar-item.active {
+  background-color: #4f545c;
+  color: #dcddde;
+  font-weight: bold;
 }
