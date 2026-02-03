@@ -8,38 +8,36 @@ body {
   color: white;
 }
 
-/* Ensure full screen height */
-.discord-layout {
-  height: 100vh;
+/* Parent layout: horizontal columns */
+.sidebar-layout {
   display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 
-/* Sidebar styles */
+/* Sidebar: fixed-width left column */
 .sidebar-container {
-  width: 240px;              /* Fixed sidebar width */
-  height: 100vh;
-  position: fixed;           /* Lock it to the left */
-  top: 0;
-  left: 0;
+  width: 240px;              /* Only the left portion */
+  flex-shrink: 0;            /* Prevent shrinking */
 
-  background-color: #2f3136; /* Discord sidebar color */
-  color: #8e9297;            /* Default text color */
+  background-color: #2f3136;
+  color: #8e9297;
   border-right: 1px solid #202225;
 
   display: flex;
   flex-direction: column;
 }
 
-/* Main content takes remaining space */
+/* Main content: fills remaining space */
 .main-content-container {
-  margin-left: 240px;        /* Same as sidebar width */
+  flex: 1;                   /* Take ALL remaining width */
   height: 100vh;
-  width: calc(100vw - 240px);
+
   background-color: #36393f;
   overflow-y: auto;
 }
 
-/* Styling for individual channel items */
+/* Sidebar items */
 .sidebar-item {
   padding: 8px 10px;
   margin-bottom: 5px;
@@ -53,9 +51,9 @@ body {
   color: #dcddde;
 }
 
-/* Active channel styling */
 .sidebar-item.active {
   background-color: #4f545c;
   color: #dcddde;
   font-weight: bold;
 }
+
