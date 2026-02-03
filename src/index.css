@@ -1,0 +1,10 @@
+body {
+  font-family: Barlow Semi Condensed, IBM Plex Sans, Montserrat, sans-serif;
+}
+
+
+.sidebar {
+  font-family: Barlow Semi Condensed, IBM Plex Sans, Montserrat, sans-serif;
+  background: linear-gradient(to bottom right, purple, blue);
+  color: white;
+}

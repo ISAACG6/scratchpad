@@ -1,14 +1,16 @@
 import React from 'react';
 
-export default function Nav() {
+export default function banner() {
   return (
-    <nav>
-      <h1>My Application</h1>
+    <div className="sidebar body">
+      <h1 className="body" >My Application</h1>
       <ul>
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
-    </nav>
+    </div>
+  
+
   );
 }
