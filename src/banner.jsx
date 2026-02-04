@@ -2,15 +2,8 @@ import React from 'react';
 
 export default function banner() {
   return (
-    <div className="banner body">
-      <h1>My Application</h1>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
+    <div className="banner body p-3">
+      <h1><em>SC4TCHP4D</em></h1>
     </div>
-  
-
   );
 }
