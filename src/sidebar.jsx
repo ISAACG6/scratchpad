@@ -8,7 +8,7 @@ export default function Sidebar() {
         <div className="sidebar d-flex flex-column border-end">
         {/* Sidebar Header */}
         <div className="d-flex justify-content-between align-items-center p-3 border-bottom">
-            <h6 className="text-uppercase text-muted mb-0 small fw-bold">
+            <h6 className="text-uppercase text-white mb-0 small fw-bold">
             Workspaces
             </h6>
             <button className="btn btn-sm btn-outline-secondary">+</button>

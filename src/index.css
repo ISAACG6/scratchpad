@@ -20,9 +20,9 @@ body {
   width: 240px;              /* Only the left portion */
   flex-shrink: 0;            /* Prevent shrinking */
 
-  background-color: #2f3136;
-  color: #8e9297;
-  border-right: 1px solid #202225;
+  background: linear-gradient(blue, purple);
+  color: white;
+  border-right: 1px solid white;
 
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@ body {
   flex: 1;                   /* Take ALL remaining width */
   height: 100vh;
 
-  background-color: #36393f;
+  background-color: white;
   overflow-y: auto;
 }
 
